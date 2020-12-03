@@ -1,0 +1,18 @@
+.system-frame__nav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  height: 4rem;
+  padding: 0 1rem;
+  background-color: black;
+  color: white;
+}
+
+.system-frame__nav-item {
+  font-size: 1.2rem;
+  padding-bottom: .75rem;
+}
+
+.system-frame__nav-item + .system-frame__nav-item {
+  margin-left: 1rem;
+}
