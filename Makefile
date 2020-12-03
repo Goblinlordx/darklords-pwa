@@ -18,3 +18,6 @@ shell:
 
 build:
 	docker-compose run app yarn build
+
+test:
+	docker-compose run app yarn test
