@@ -22,7 +22,7 @@ jobs:
       - name: Install dependencies
         run: yarn
       - name: Build
-        run: yarn build
+        run: GENERATE_SOURCEMAP=false yarn build
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
