@@ -15,9 +15,11 @@ const GameList = ({ system }) => {
         {(result) => (
           <ul>
             {result.map(({ id, name }) => (
-              <Link key={id} to={`${url}/${id}`}>
-                <li>{name}</li>
-              </Link>
+              <li>
+                <Link key={id} to={`${url}/${id}`}>
+                  {name}
+                </Link>
+              </li>
             ))}
           </ul>
         )}
